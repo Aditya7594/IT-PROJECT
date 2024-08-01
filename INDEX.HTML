@@ -12,67 +12,114 @@
     </header>
     <main>
         <div class="movie-list">
-            <div class="movie">
-                <img src="path/to/your/image1.jpg" alt="The Shawshank Redemption">
-                <h2>1. The Shawshank Redemption</h2>
-                <p><strong>Description:</strong> Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
-                <p><strong>Why I like it:</strong> The powerful story of hope, friendship, and perseverance.</p>
+            <div class="movie" onclick="showDetails('movie1')">
+                <img src="https://via.placeholder.com/300x450" alt="The Shawshank Redemption">
+                <div class="movie-title">The Shawshank Redemption</div>
             </div>
-            <div class="movie">
-                <img src="path/to/your/image2.jpg" alt="The Godfather">
-                <h2>2. The Godfather</h2>
-                <p><strong>Description:</strong> The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
-                <p><strong>Why I like it:</strong> The intricate plot and incredible performances.</p>
+            <div class="movie" onclick="showDetails('movie2')">
+                <img src="https://via.placeholder.com/300x450" alt="The Godfather">
+                <div class="movie-title">The Godfather</div>
             </div>
-            <div class="movie">
-                <img src="path/to/your/image3.jpg" alt="The Dark Knight">
-                <h2>3. The Dark Knight</h2>
-                <p><strong>Description:</strong> When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.</p>
-                <p><strong>Why I like it:</strong> The intense action and Heath Ledger's iconic performance as the Joker.</p>
+            <div class="movie" onclick="showDetails('movie3')">
+                <img src="https://via.placeholder.com/300x450" alt="The Dark Knight">
+                <div class="movie-title">The Dark Knight</div>
             </div>
-            <div class="movie">
-                <img src="path/to/your/image4.jpg" alt="Pulp Fiction">
-                <h2>4. Pulp Fiction</h2>
-                <p><strong>Description:</strong> The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</p>
-                <p><strong>Why I like it:</strong> The non-linear storyline and memorable dialogue.</p>
+            <div class="movie" onclick="showDetails('movie4')">
+                <img src="https://via.placeholder.com/300x450" alt="Pulp Fiction">
+                <div class="movie-title">Pulp Fiction</div>
             </div>
-            <div class="movie">
-                <img src="path/to/your/image5.jpg" alt="Forrest Gump">
-                <h2>5. Forrest Gump</h2>
-                <p><strong>Description:</strong> The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.</p>
-                <p><strong>Why I like it:</strong> The heartwarming story and Tom Hanks' outstanding performance.</p>
+            <div class="movie" onclick="showDetails('movie5')">
+                <img src="https://via.placeholder.com/300x450" alt="Forrest Gump">
+                <div class="movie-title">Forrest Gump</div>
             </div>
-            <div class="movie">
-                <img src="path/to/your/image6.jpg" alt="Inception">
-                <h2>6. Inception</h2>
-                <p><strong>Description:</strong> A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.</p>
-                <p><strong>Why I like it:</strong> The mind-bending plot and visual effects.</p>
+            <div class="movie" onclick="showDetails('movie6')">
+                <img src="https://via.placeholder.com/300x450" alt="Inception">
+                <div class="movie-title">Inception</div>
             </div>
-            <div class="movie">
-                <img src="path/to/your/image7.jpg" alt="Fight Club">
-                <h2>7. Fight Club</h2>
-                <p><strong>Description:</strong> An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.</p>
-                <p><strong>Why I like it:</strong> The unique storyline and the twist ending.</p>
+            <div class="movie" onclick="showDetails('movie7')">
+                <img src="https://via.placeholder.com/300x450" alt="Fight Club">
+                <div class="movie-title">Fight Club</div>
             </div>
-            <div class="movie">
-                <img src="path/to/your/image8.jpg" alt="The Matrix">
-                <h2>8. The Matrix</h2>
-                <p><strong>Description:</strong> A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
-                <p><strong>Why I like it:</strong> The groundbreaking special effects and philosophical themes.</p>
+            <div class="movie" onclick="showDetails('movie8')">
+                <img src="https://via.placeholder.com/300x450" alt="The Matrix">
+                <div class="movie-title">The Matrix</div>
             </div>
-            <div class="movie">
-                <img src="path/to/your/image9.jpg" alt="Interstellar">
-                <h2>9. Interstellar</h2>
-                <p><strong>Description:</strong> A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
-                <p><strong>Why I like it:</strong> The emotional storyline and stunning visuals.</p>
+            <div class="movie" onclick="showDetails('movie9')">
+                <img src="https://via.placeholder.com/300x450" alt="Interstellar">
+                <div class="movie-title">Interstellar</div>
             </div>
-            <div class="movie">
-                <img src="path/to/your/image10.jpg" alt="The Lord of the Rings: The Return of the King">
-                <h2>10. The Lord of the Rings: The Return of the King</h2>
-                <p><strong>Description:</strong> Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</p>
-                <p><strong>Why I like it:</strong> The epic conclusion to an incredible trilogy.</p>
+            <div class="movie" onclick="showDetails('movie10')">
+                <img src="https://via.placeholder.com/300x450" alt="The Lord of the Rings: The Return of the King">
+                <div class="movie-title">The Lord of the Rings: The Return of the King</div>
+            </div>
+        </div>
+
+        <div id="movie-details" class="movie-details">
+            <div class="details-content">
+                <span class="close" onclick="hideDetails()">&times;</span>
+                <div id="movie1" class="details">
+                    <h2>The Shawshank Redemption</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="The Shawshank Redemption">
+                    <p><strong>Description:</strong> Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+                    <p><strong>Why I like it:</strong> The powerful story of hope, friendship, and perseverance.</p>
+                </div>
+                <div id="movie2" class="details">
+                    <h2>The Godfather</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="The Godfather">
+                    <p><strong>Description:</strong> The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+                    <p><strong>Why I like it:</strong> The intricate plot and incredible performances.</p>
+                </div>
+                <div id="movie3" class="details">
+                    <h2>The Dark Knight</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="The Dark Knight">
+                    <p><strong>Description:</strong> When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.</p>
+                    <p><strong>Why I like it:</strong> The intense action and Heath Ledger's iconic performance as the Joker.</p>
+                </div>
+                <div id="movie4" class="details">
+                    <h2>Pulp Fiction</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="Pulp Fiction">
+                    <p><strong>Description:</strong> The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</p>
+                    <p><strong>Why I like it:</strong> The non-linear storyline and memorable dialogue.</p>
+                </div>
+                <div id="movie5" class="details">
+                    <h2>Forrest Gump</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="Forrest Gump">
+                    <p><strong>Description:</strong> The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.</p>
+                    <p><strong>Why I like it:</strong> The heartwarming story and Tom Hanks' outstanding performance.</p>
+                </div>
+                <div id="movie6" class="details">
+                    <h2>Inception</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="Inception">
+                    <p><strong>Description:</strong> A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.</p>
+                    <p><strong>Why I like it:</strong> The mind-bending plot and visual effects.</p>
+                </div>
+                <div id="movie7" class="details">
+                    <h2>Fight Club</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="Fight Club">
+                    <p><strong>Description:</strong> An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.</p>
+                    <p><strong>Why I like it:</strong> The unique storyline and the twist ending.</p>
+                </div>
+                <div id="movie8" class="details">
+                    <h2>The Matrix</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="The Matrix">
+                    <p><strong>Description:</strong> A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
+                    <p><strong>Why I like it:</strong> The groundbreaking special effects and philosophical themes.</p>
+                </div>
+                <div id="movie9" class="details">
+                    <h2>Interstellar</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="Interstellar">
+                    <p><strong>Description:</strong> A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                    <p><strong>Why I like it:</strong> The emotional storyline and stunning visuals.</p>
+                </div>
+                <div id="movie10" class="details">
+                    <h2>The Lord of the Rings: The Return of the King</h2>
+                    <img src="https://via.placeholder.com/300x450" alt="The Lord of the Rings: The Return of the King">
+                    <p><strong>Description:</strong> Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</p>
+                    <p><strong>Why I like it:</strong> The epic conclusion to an incredible trilogy.</p>
+                </div>
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
