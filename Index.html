@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Favorite Movies of All Time</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .container:hover {
+            transform: scale(1.02);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #f39c12;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .movie-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .movie-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #444;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .movie-list li:hover {
+            background-color: #444;
+            transform: translateX(10px);
+        }
+        
+        .movie-list li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .movie-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
+        .movie-info {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .movie-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #f39c12;
+        }
+        
+        .movie-description {
+            color: #ccc;
+            font-size: 1em;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(243, 156, 18, 1);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+            }
+        }
+
+        h1.glow {
+            animation: glow 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow">Top 10 Favorite Movies of All Time</h1>
+        <ul class="movie-list">
+            <li>
+                <img src="Downloads/in the mood.webp" alt="In the Mood for Love" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">In the Mood for Love (2000)</h2>
+                    <p class="movie-description">A romantic drama that explores the themes of memory and regret, set in 1960s Hong Kong.</p>
+                </div>
+            </li>
+            <li>
+                <img src="Downloads/chungking.jpg" alt="Chungking Express" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">Chungking Express (1994)</h2>
+                    <p class="movie-description">A quirky romantic comedy that follows two cops and their respective love interests in Hong Kong.</p>
+                </div>
+            </li>
+            <li>
+                <img src="Downloads/days of being wild.jpeg" alt="Days of Being Wild" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">Days of Being Wild (1990)</h2>
+                    <p class="movie-description">A romantic drama that explores the themes of love, loss, and identity in 1960s Hong Kong.</p>
+                </div>
+            </li>
+            <li>
+                <img src="Downloads/remdeption.jpeg" alt="The Shawshank Redemption" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">The Shawshank Redemption (1994)</h2>
+                    <p class="movie-description">A highly acclaimed drama about hope, redemption, and the power of the human spirit.</p>
+                </div>
+            </li>
+            <li>
+                <img src="Downloads/godfather.jpeg" alt="The Godfather" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">The Godfather (1972)</h2>
+                    <p class="movie-description">A crime drama that explores the world of organized crime and the moral consequences of the choices we make.</p>
+                </div>
+            </li>
+            <li>
+                <img src="Downloads/the dark.jpeg" alt="The Dark Knight" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">The Dark Knight (2008)</h2>
+                    <p class="movie-description">An action-packed superhero thriller that explores the themes of heroism and sacrifice.</p>
+                </div>
+            </li>
+            <li>
+                <img src="Downloads/12 angry men.jpeg" alt="12 Angry Men" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">12 Angry Men (1957)</h2>
+                    <p class="movie-description">A gripping courtroom drama that examines the complexities of justice and the human condition.</p>
+                </div>
+            </li>
+            <li>
+                <img src="Downloads/forest gump.jpeg" alt="Forrest Gump" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">Forrest Gump (1994)</h2>
+                    <p class="movie-description">A heartwarming drama that follows the extraordinary life of a simple man with a big heart.</p>
+                </div>
+            </li>
+            <li>
+                <img src="Downloads/the lion king.png" alt="The Lion King" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">The Lion King (1994)</h2>
+                    <p class="movie-description">An animated classic that tells the story of a young lion's journey to reclaim his throne.</p>
+                </div>
+            </li>
+            <li>
+                <img src="Downloads/sprited.webp" alt="Spirited Away" class="movie-image">
+                <div class="movie-info">
+                    <h2 class="movie-title">Spirited Away (2001)</h2>
+                    <p class="movie-description">A visually stunning animated film that takes the viewer on a magical journey through a fantastical world.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const movieItems = document.querySelectorAll('.movie-list li');
+
+            movieItems.forEach(item => {
+                item.addEventListener('mouseover', () => {
+                    item.style.transform = 'scale(1.05)';
+                });
+
+                item.addEventListener('mouseout', () => {
+                    item.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
